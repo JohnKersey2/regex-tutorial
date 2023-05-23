@@ -12,8 +12,7 @@ For a quick example, lets use "user@host.com". The above regex first checks for 
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [Grouping Constructs](#grouping-constructs)
-- [Bracket Expressions](#bracket-expressions)
+- [Grouping Constructs and Bracket Expressions](#grouping-constructs-and-bracket-expressions)
 - [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
@@ -36,11 +35,23 @@ In languages other than javascript, different characters are used to define thes
 
 ### Quantifiers
 
-### Grouping Constructs
+Quantifiers refer to how many of a certain portion of our regex should be present. Ours has a simple "Quantity", as described by {2,6}. This states that the final portion of our code should be somewhere between 2 to 6 characters. 
 
-### Bracket Expressions
+### Grouping Constructs and Bracket Expressions
+
+Grouping constructs breakdown the entirety of the string the regex is looking at into substrings. There are broken up by parenthesis or square brackets. Square brackets are meant to capture specific characters, whereas parenthesis captures groupings of characters (and can hold things like quantifiers)
 
 ### Character Classes
+
+Character classes simply distinguish what kinds of characters your regex is looking for. It could be letters, digits, special characters, or any combination thereof. 
+
+In our example 
+
+\d matches any digit. 
+
+a-z0-9_\.-  matches all alphanumber characters, underscore, and dash.
+
+The \. means it should ignore periods, as \ tells it to escape the character.
 
 ### The OR Operator
 

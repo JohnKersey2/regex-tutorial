@@ -16,7 +16,6 @@ For a quick example, lets use "user@host.com". The above regex first checks for 
 - [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
-- [Character Escapes](#character-escapes)
 
 ## Regex Components
 
@@ -41,6 +40,8 @@ Quantifiers refer to how many of a certain portion of our regex should be presen
 
 Grouping constructs breakdown the entirety of the string the regex is looking at into substrings. There are broken up by parenthesis or square brackets. Square brackets are meant to capture specific characters, whereas parenthesis captures groupings of characters (and can hold things like quantifiers)
 
+([a-z0-9_\.-]+) is a grouping, with a bracket expression inside of it. The @ symbol in our expression does not sit in a bracket expression or a group. 
+
 ### Character Classes
 
 Character classes simply distinguish what kinds of characters your regex is looking for. It could be letters, digits, special characters, or any combination thereof. 
@@ -55,10 +56,12 @@ The \. means it should ignore periods, as \ tells it to escape the character.
 
 ### The OR Operator
 
+| defines the or operator. While not in our expression, it's helpful to know in other expressions it allows you to search for one of two things. A developer may decide to allow . or , before the top level domain as , is a common typo for .
+
 ### Flags
 
-### Character Escapes
+This regex doesn't use one of the six flags in javascript. A developer could use the "i" taget to make a search for the email case insensitive, if pulling email from a website. A developer may use "g" to look at all matches, as regex only returns the first. They may also add "u" to enable full unicode support.  
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+John Kersey is a junior web developer from Atlanta. Please visit my [github here](https://github.com/JohnKersey2)

@@ -1,4 +1,4 @@
-# Tutorial: Matching an Email With regex
+# Tutorial: Matching an Email with Regex
 
 A common feature in any website is creating a user and signing them up with their email. This tutorial will help you ensure that a user is entering an input that is at least in the correct format of an email. 
 
